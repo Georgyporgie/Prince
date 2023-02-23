@@ -1,2 +1,2 @@
 # Prince
-incredible popstar Prince
+the incredible popstar Prince
