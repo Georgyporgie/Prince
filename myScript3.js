@@ -1,28 +1,27 @@
-list.onclick = function(e) {
-  e.preventDefault();
+let currentAudio = null; 
 
-  var elm = e.target;
-  var audio = document.getElementById('audio');
 
-  var source = document.getElementById('audioSource');
-  source.src = elm.getAttribute('data-value');
 
-  audio.load(); //call this to just preload the audio without playing
-  audio.play(); //call this to play the song right away
-};
 
-function playAudio (src) {
-    if(window.audio) {
-       audio.pause();
+function playAudio(src) {
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0; // Resets the track
     }
-    window.audio = new Audio (src);
-    window.audio.play();
+    currentAudio = new Audio(src);
+    currentAudio.play();
 }
 
 
 
-
-function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
+ if (currentAudio) {
+    let fadeOut = setInterval(() => {
+        if (currentAudio.volume > 0.1) {
+            currentAudio.volume -= 0.1;
+        } else {
+            clearInterval(fadeOut);
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+    }, 100);
+}
