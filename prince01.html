@@ -59,8 +59,23 @@
 </h6>
 
 
-<img class= "rain" src="purple rain 2.png" value="PLAY"  onclick="play()">
-<audio id="audio" src="music/lp/Prince - Purple Rain (cd).mp3" ></audio>
+<img class="rain" src="purple rain 2.png" onclick="playAudio('purpleRain')">
+<audio id="purpleRain" src="music/lp/Prince - Purple Rain (cd).mp3"></audio>
+
+<script>
+function playAudio(id) {
+  // Pause all other audio
+  document.querySelectorAll('audio').forEach(a => {
+    a.pause();
+    a.currentTime = 0;
+  });
+
+  // Play the selected track
+  const audio = document.getElementById(id);
+  audio.play();
+}
+</script>
+
 <br>
 
 
