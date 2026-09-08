@@ -1,28 +1,14 @@
 <!doctype html>
 <html>
  <head>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HGPPL3SXDS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-HGPPL3SXDS');
-</script>
-  
-  
-  
   <link rel="stylesheet" href="style.css" />
 <title> Prince.nl</title>
-<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
  <body>
   <div class="grid-container">
-   <div class="grid-item header"><h1> <strong>The <span id= "legende">l</span><span id= "green">e</span>g<span id= "legende">e</span><span id= "blue">n</span><span id= "legende">d<span id= "green">a</span>r</span><span id= "green">y</span> Prince<img id= "symbol"></strong></h1> </div>
+   <div class="grid-item header"><h1> <strong>The <span id= "legende">l</span><span id= "green">e</span>g<span id= "legende">e</span><span id= "blue">n</span><span id= "legende">d<span id= "green">a</span>r</span><span id= "green">y</span> Prince<img class= "symbol" src= "symbol4.png"></strong></h1> </div>
    
 <div class="grid-item sidebar">
    <br>
@@ -43,9 +29,7 @@
 <br>
 <br>
 <br>
-  
-
-<h6 class="play">
+  <h6 class="play">
    <span>p</span>
    <span>l</span>
    <span>a</span>
@@ -57,14 +41,14 @@
    
    
    </h6>
-<img id= "rain" value="PLAY"  onclick="play()">
-<audio id="audio"></audio>
+<img class= "rain" src="Prince - parade.png" value="PLAY"  onclick="play()">
+<audio id="audio" src="Prince - Parade.mp3" ></audio>
 
 <br>
 
 
 
-<img id= "rainy">
+<img class= "rain" src="Prince emancipation.png">
 
 </div>
    <div class="grid-item article">
@@ -79,7 +63,7 @@
 <br>
 <br>
 <br>
- <img id= "taf">
+ <img class= "taf" src= "prince2.png">
 
 <br>
 <br>
@@ -104,33 +88,36 @@
 <br>
 <br>
 <br>
-<img id= "fool">
+<img class= "fool" src= "symbol.png">
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+
 <br>
 <br>
 <br>
 <br>
 
-
-
-
-<img id= "cap">
+<img class= "cap" src= "lovesexy.png">
 <br>
 <br>
 <br>
 
-<ul class= "Singles"> <strong> Lovesexy Music  </strong> 
+<ul class= "Singles"> <strong> Lovesexy music  </strong> 
 <br>
 <br>
 
 <ol id="list">  
 
-<li class="black"> <em><tag onclick="playAudio('music/hits/Prince When doves cry.mp3')">When Doves Cry  (5:53 min)</tag></em></li>
+<li id="bad"> <em><tag onclick="playAudio('Prince When doves cry.mp3')">When doves cry  (5:53 min)</tag></em></li>
 
-<li class="black"> <em><tag onclick="playAudio('music/hits/Prince I would die for you.mp3')">I Would Die For You (4:19 min)</tag></em></li>
-<li class="black"> <em><tag onclick="playAudio('music/hits/Prince - I wanna be your lover.mp3')">I Wanna Be Your Lover (5:51 min)</tag></em></li>
-<li class="black"> <em><tag onclick="playAudio('music/hits/Prince - Controversy.mp3')">Controversy (7:18 min)</tag></em></li>
+<li id="Billie"> <em><tag onclick="playAudio('Prince I would die for you.mp3')">I would die for you (4:19 min)</tag></em></li>
+<li id="black"> <em><tag onclick="playAudio('Prince - I wanna be your lover.mp3')">I wanna be your lover (5:51 min)</tag></em></li>
+<li id="black"> <em><tag onclick="playAudio('Prince - Controversy.mp3')">Controversy (7:18 min)</tag></em></li>
 
 
 
@@ -142,9 +129,9 @@
 </div>
 </div>
 
-<audio  id="nau"  autoplay>
+<audio  class="nau" controls="controls" autoplay>
  <source src="" type="audio/mpeg" />
-   <source src="" type="audio/wav" />
+   <source src="Prince - nau!.mp3" type="audio/wav" />
 </audio>
 
 
@@ -159,67 +146,5 @@
 
 
 <script src= "myScript.js"> </script>
-
-
- 
-<script>
-document.getElementById("nau").setAttribute('src', 'music/background sounds/Prince - nau!.mp3');
-</script>
-
- 
-<script>
-document.getElementById("audio").setAttribute('src', 'music/lp/Prince - Parade.mp3');
-</script>
-
-
-
-<script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("symbol");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/symbol4.png';
-</script>
- <script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("taf");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/prince2.png';
-</script>
-
- <script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("fool");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/symbol.png';
-</script>
-
- <script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("rainy");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/Prince emancipation.png';
-</script>
- <script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("rain");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/Prince - parade.png';
-</script>
-
- <script>
-//Get our img element by using document.getElementById
-var img = document.getElementById("cap");
-
-//Set the src property of our element to the new image URL
-img.src = 'images/lovesexy.png';
-</script>
-
-
-
 </body>
 </html>
