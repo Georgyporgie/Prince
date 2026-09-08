@@ -15,7 +15,7 @@ margin: 2px 5px 2px 5px ;
 
 
 
-#artist { width: 125px; height: 125px; z-index:-150; 
+.artist { width: 125px; height: 125px; z-index:-150; 
 filter: brightness(120%) saturate(105%) contrast(115%) opacity( 75%); margin: 50px 50px 50px 50px; transform: rotate(-15deg);
 }
 
@@ -26,18 +26,18 @@ gap: 2px;
 
 .footer  {
 display: flex;
-grid-column: span 2; z-index:-300;
+grid-column: span 2; 
 }
 
 
 a { color: black;
 }
 
-#bull { 
+.bull { 
 height: 30px; width: 40px;
-filter:brightness(105%)contrast(105%)saturate(105%) opacity(75%);
+filter:brightness(110%)contrast(115%)saturate(110%) opacity(75%);
 border-radius: 5px;
-z-index: -400;
+z-index: -100;
 }
 
 
@@ -58,7 +58,7 @@ height: 30px; margin-left: 500px; transform: rotate(0deg); filter: brightness(11
 
 
 font-family: Fantasy;
-
+font-style :  italic;
 color:aliceBlue;
 margin: 5px 5px 5px 5px;
 text-decoration: underline;
@@ -69,25 +69,25 @@ z-index: -50;
 .container {
  display: flex;
  width: 100%;
-background:linear-gradient:(180deg,0000CC,3366FF,3399FF);
+ background-color: #000099;
  color: #FFFFFF;
 flex-direction: row; justify-content: space-around;
 }
 
 .item {
- padding: 8px; font-size: 15px; color:#FF9999; font-family: Candara; background:linear-gradient:(180deg,0000CC,3366FF,3399FF); z-index:0;
+ padding: 8px; font-size: 15px; color:#FF9999; font-family: Candara; background-color: 0000CC;
 }
-#paisley { width: 115px; height: 115px; z-index:-250; float: right;
+.paisley { width: 115px; height: 115px; z-index:-250; float: right;
 filter: brightness(120%) saturate(105%) contrast(115%) opacity( 75%); margin: 50px 50px 50px 50px; transform: rotate(-160deg); 
 }
 
 .lights { width: 150px; height: 100px; z-index:-150; 
-filter: brightness(100%) saturate(110%) contrast(105%) opacity( 75%); margin: 50px 50px 50px 50px; transform: rotate(0deg); display: block; margin: auto auto auto auto; border-radius: 5px;
+filter: brightness(120%) saturate(105%) contrast(115%) opacity( 75%); margin: 50px 50px 50px 50px; transform: rotate(0deg); display: block; margin: auto auto auto auto; border-radius: 5px;
 }
 .Deel 
 {
 padding :2px 2px 2px 2px Gold;  height: 16px; width: 25px; background-color:purple; 
-color: gold;   font-size: 10px;
+color: gold;  font-style :  italic;  font-size: 10px;
   border-radius: 5px;    font-family: Arial ,Helvetica,sans-serif;
 text-align: center;  border: solid 1px black;
  z-index: -100; float: left; margin-right: -5px; z-index: -26;
@@ -97,7 +97,7 @@ text-align: center;  border: solid 1px black;
 .staat 
 {
 padding :2px 2px 2px 2px Gold;  height: 16px; width: 25px; background-color:purple; 
-color: gold;    font-size: 10px;
+color: gold;  font-style :  italic;  font-size: 10px;
   border-radius: 5px;    font-family: Arial ,Helvetica,sans-serif;
 text-align: center;  z-index: -26;border: solid 1px black;
 
@@ -107,7 +107,7 @@ text-align: center;  z-index: -26;border: solid 1px black;
 .kaars {
 
 
-font-size: 16px; color: aliceBlue;  z-index: -200; transform: rotate(0deg); font-style:italic;
+font-size: 16px; color: aliceBlue;  z-index: -200; transform: rotate(0deg);
 
 }
 
@@ -123,15 +123,15 @@ li:hover {
   color:#003300;
 }
 
-#gitar  {  display: block; margin: auto auto auto auto;
-width: 175px; height: 100px;  transform: rotate(-9deg); z-index: -500; filter: brightness(110%) saturate(110%) contrast(110%)  opacity(75%);
+.gitar  {  display: block; margin: auto auto auto auto;
+width: 175px; height: 100px;  transform: rotate(-9deg); z-index: -500; filter: brightness(100%) saturate(100%) contrast(100%)  opacity(75%);
 
 }
 
-#funk{  height: 145px; width: 145px; filter: opacity(75%) brightness(110%) saturate(110%) contrast(110%); z-index: 0; border: solid 1px black; transform: rotate(0deg); float: right; margin-right: 5px; margin-left: 5px;
+.funk{  height: 145px; width: 145px; filter: opacity(75%) brightness(105%) saturate(105%) contrast(105%); z-index: 0; border: solid 1px black; transform: rotate(0deg); float: right; margin-right: 5px; margin-left: 5px;
 }
 .disk {
- display: flex; flex-direction: column; font-size: 20px; margin-left: 70px;font-family: Candara; color: #FF9999; transform: rotate(0deg); float: right;z-index:0;
+ display: flex; flex-direction: column; font-size: 20px; margin-left: 70px;font-family: Candara; color: #FF9999; transform: rotate(0deg); float: right;
 }
 #black {  color: #003300; z-index: -2000;
 
