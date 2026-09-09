@@ -46,9 +46,25 @@
 
 <br>
 
-<img class="rain" src="Prince emancipation.png" onclick="playAudio('audio2')">
-<audio id="audio2" src="music/lp/Prince - Funk Machine.mp3"></audio>
+<img class="rain" src="Prince emancipation.png" onclick="playAudio('audio')">
+<audio id="audio" src="music/lp/Prince - Funk Machine.mp3"></audio>
 
+<script>
+function play() {
+  const audio = document.getElementById("audio");
+  audio.currentTime = 0;
+  audio.play();
+}
+
+
+
+
+function playAudio(id) {
+  const audio = document.getElementById(id);
+  audio.currentTime = 0;
+  audio.play();
+}
+</script>
 
 
 </div>
